@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+button{
+    cursor: pointer;
+}
+.main-body{
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#e3eaf4 ;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    color: white;
+}
+.wrapper{
+    height: auto;
+    background-color: #0d0721;
+    width: 90%;
+    margin: 2em 0 2em 0;
+    border-radius: 5px;
+}
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+}
+.hamburger .bar:nth-child(2) {
+    width: 15px;
+    margin-left: 9.5px;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    /* color: #475569; */
+}
+
+.nav-link:hover{
+    color: #482ff7;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10em;
+
+}
+.left-part{
+    text-align: center;
+    
+}
+.right-part{
+
+}
+.right-part img{
+    width: 100%;
+    max-width: 600px;
+}
+.btn {
+    background: #3bdab2;
+    outline: none;
+    border: navajowhite;
+    padding: 1.5em 5em;
+    font-weight: bold;
+    color: white;
+    border-radius: 2em;
+}
+.last-part {
+    text-align: center;
+    padding: 3em;
+}
+.last-btn{
+    padding: 1.2em 3em;
+    font-weight: bold;
+    border-radius: 2em;
+    border: none;
+}
+.last-part h1{
+    font-size: 3em;
+}
+.last-part p{
+    font-size: 15px;
+}
+
+/* starting media quires */
+@media only screen and (max-width: 960px) {
+    /* navbar */
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 13rem;
+        flex-direction: column;
+        background-color: #e3eaf4;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+    }
+    ul li a{
+        color: #000;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        background: #00f481;
+        border-radius: 2em;
+        margin-left: 60%;
+        padding: 2em 5em;
+        text-align: ;
+    }
+    .bar{
+        margin-right: 30%;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+        /* main */
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .last-img{
+        display: block;
+    }
+    .last-part img{
+        display: block!important;
+        margin: 2em auto;
+        padding: 5em 0;
+    }
+
+}
+.last-part img{
+    display: none;
+}
+#btn1{
+
+    top: 12%;
+    left: 3%;
+color: black;
+    border-radius: 50%;
+    background: black;
+    border: none;
+}
+#btn2{
+    top: 14%;
+    right: 3%;
+    border: none;
+    background: black;
+    border-radius: 50%;
+    color: black;
+}
+#btn3{
+    top: 37%;
+    left: 11%;
+    border: none;
+    border-radius: 50%;
+    color: black;
+    background: black;
+}
+
+#btn4{
+    top: 22%;
+    left: 28%;
+    border: none;
+    border-radius: 50%;
+    background: black;
+    color: black;
+    padding: 7px;
+ }
+#btn5{
+    top: 27%;
+    left: 56%;
+    background: black;
+    color: black;
+    border: none;
+}
+#btn6{
+    position: absolute;
+    top: 36%;
+    right: 11%;
+    border: none;
+    background: black;
+}
+#btn7{
+    top: 64%;
+    left: 20%;
+    border: none;
+    background: black;
+}
+#btn8{
+    top: 65%;
+    right: 19%;
+    background: black;
+    border: none;
+}
