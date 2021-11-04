@@ -97,8 +97,14 @@ a {
     
 }
 .right-part{
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
 }
+
+
 .right-part img{
     width: 100%;
     max-width: 600px;
@@ -142,6 +148,7 @@ a {
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
+        z-index: 99;
     }
     ul li a{
         color: #000;
@@ -159,7 +166,6 @@ a {
         border-radius: 2em;
         margin-left: 60%;
         padding: 2em 5em;
-        text-align: ;
     }
     .bar{
         margin-right: 30%;
